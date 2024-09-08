@@ -27,9 +27,9 @@ class Recintos {
             this.animais.set(animal.especie, qtd);
             this.tamanhoatual -= animal.tamanho*qtd;
             if (this.animais.size > 1) {
-                this.tamanhoatual-- 
+                this.tamanhoatual--;
             }
-            return true ? this.tamanhoatual >= 0 : false;
+            return this.tamanhoatual >= 0;
         } else {
             return false;
         }
