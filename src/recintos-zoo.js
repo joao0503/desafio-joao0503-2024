@@ -6,7 +6,6 @@ class Animal {
         this.alimentacao = alimentacao;
     }
 
-    // retorna true se for viavel ao recinto
     adicionarSeViavel(animal, quantidade, recintosViaveis, recinto) {
         if (recinto.adicionarAnimal(animal, quantidade)) {
             recintosViaveis.push(`Recinto ${recinto.numero} (espaço livre: ${recinto.tamanhoAtual} total: ${recinto.tamanhoTotal})`);
